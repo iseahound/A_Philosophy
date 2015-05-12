@@ -1,0 +1,89 @@
+Short Guide on evaluating Hexadecimals in an & expression
+
+
+Basic form:
+
+   if (0x80020 & 0x80130)
+      MsgBox True! 7    ;The answer is true. 
+
+Hexadecimals evaluate on a location basis, meaning the ones place, tenths place etc. 
+The & operator treats hexadecimals as a union operator, that is whether one hexadecimal can comepleatly
+encompass anpother hexadecimal. In the example above, the answer is yes. 0x80000 is equal to 0x80000, so that
+is true. 0x00100 can encompass 0x00000. (Although normally this statement would be false.) And, 0x30 and 0x20
+are both greater than zero, so true. 
+
+In short,
+
+ - If the hexadecimals are equal, it is true. 
+ 
+ - If any two identical places have a non-zero number, it is true. (Say the tenths place.) 
+
+
+More Examples
+
+if (0x04020 & 0x80301) ;false
+   MsgBox True! 17
+
+if (0x04901 & 0x80500)  ;true
+   MsgBox True! 18
+
+if (0x04090 & 0x80001)  ;false
+   MsgBox True! 19
+
+if (0x04009 & 0x80003)  ;true
+   MsgBox True! 20
+
+
+Test Questions
+
+
+if (0x8 & 0x0)
+   MsgBox True! 1
+
+if (0x8 & 0x8)
+   MsgBox True! 2
+
+if (0x8 and 0x8)
+   MsgBox True! 3
+
+if (0x20 & 0x0)
+   MsgBox True! 4
+
+if (0x0 & 0x20)
+   MsgBox True! 5
+
+if (0x80020 & 0x100)
+   MsgBox True! 6
+
+if (0x80020 & 0x80130)
+   MsgBox True! 7
+
+if (0x80130 & 0x80020)
+   MsgBox True! 7.5
+
+if (0x8 & 0x00008)
+   MsgBox True! 8
+
+if (0x8 & 0x01008)
+   MsgBox True! 9
+
+if (0x8 & 0x01009)
+   MsgBox True! 10
+
+if (0x1 & 0x3)
+   MsgBox True! 11
+
+if (0x81040 & 0x82020)
+   MsgBox True! 12
+
+if (0x80000 & 0x02020)
+   MsgBox True! 13
+
+if (0x80000 & 0x2020)
+   MsgBox True! 14
+
+if (0x04000 & 0x80000)
+   MsgBox True! 15
+
+if (0x04300 & 0x80300)
+   MsgBox True! 16

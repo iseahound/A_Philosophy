@@ -1,0 +1,40 @@
+===HOW TO COMPLILE AHK FILES==
+
+So you've written a script and want to compile it for all your other computers!
+It's rather complicated, since your target machines don't have AutoHotKey. 
+
+NOTE: Run as Administraor
+
+Step 1. 
+
+   Create copies of all the files you want to compile. 
+
+
+Step 2. 
+
+   Modify those files. 
+      -Change all .ahk extensions to .exe
+      -Delete those marked with ;c
+      -change files from plugin\ to root. 
+
+
+Step 3. 
+
+   Right click, and compile as 32 bit. Then test them.
+   There should be 6 files.  
+
+
+Step 4. 
+
+   Run "iexpress" in the cmd or run prompt. (From C:\Windows\SysWOW64 for 32-bit)
+   Create a new SED file, or import the saved one. 
+
+   Instructions for a New SED File
+   ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+   a. New file
+   b. just open the old one. 
+
+
+Step 5. 
+
+   It should work!

@@ -1,0 +1,21 @@
+The assignment operator = is NOT equal to :=
+
+= This operator simply gives the underlying data a new name. 
+
+:= This operator evaluates the expression and stores it. 
+
+
+Examples:
+
+   Text = RegexReplace(4cat, ^/d, "")  ;replaces "4cat" with "cat"
+
+   The variable %text% has "RegexReplace(value, ^/d, "")" stored in it. 
+
+
+   However, if the correct operator := is used, "cat" will be stored. 
+
+
+   Text = ""
+
+   The value for text is now literally "", or two double quotes and not null. 
+   The correct way to assign this is either Text= or Text := "".  

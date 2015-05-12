@@ -1,0 +1,11 @@
+#Space::
+   WinGet, ID, ID, A
+   WinSet, ExStyle, +0x80028, ahk_id %ID%
+   WinSet, Transparent, 125, ahk_id %ID% 
+   KeyWait, Space
+   WinSet, ExStyle, -0x80028, ahk_id %ID%
+   ;VarSetCapacity(ID, 0) 
+return
+
+
+For 3D drag and drop

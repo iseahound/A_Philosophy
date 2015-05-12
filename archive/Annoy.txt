@@ -1,0 +1,13 @@
+Annoy := 0
+
+#!space:: 
+   Loop {
+      Input, OutputVar, L1
+      MsgBox, Get away from my computer
+      Annoy++
+      If (Annoy > 3) {
+         MsgBox, 48, Oh-oh, You were warned!, 10
+         Shutdown, 13
+      }
+   }
+   return

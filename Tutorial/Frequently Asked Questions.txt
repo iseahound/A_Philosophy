@@ -1,0 +1,27 @@
+
+
+  A_Philosophy
+  Making Life Simpler.
+
+  by Edison Hua
+
+--------------------------
+
+Q: How do I use this package?
+A: Double-click A_Philosophy, and it should run. 
+
+Q: What are the ideals of A_Philosophy?
+A: The ideals of A_Philosophy are that a. Life should be made simpler, and that b. You must make your
+   own life simpler. This means that either one makes their own life simpler, or one appreciates how 
+   life has been made simple for them. 
+
+Q: There are too many scripts!!
+A: Ask yourself before adding any scripts, whether the functionality is needed, or if it could be added
+   using a better method, preferably your own. 
+
+Q: Hi, this is me from the future. 
+A: Hi! I hope you enjoy this package. Some of these files are as old as January 30th, 2012! That's 2
+   years so far. 
+
+Q: Are the files that were not written by you altered in any way?
+A: Some of them are. Look for semicolons, and changes in the "header" of the file (like #NoTrayIcon). 

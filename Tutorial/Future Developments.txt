@@ -1,0 +1,13 @@
+Try to replace millisecondTimer. 
+Also, find an alternative for DrawOnScreen. 
+
+
+
+It must have smart guides, for percision alining, and a ruler. A protactor would be nice too. 
+
+-Onscreen ruler, protractor (in pixels, and pixel coordinates)
+-Regex Text replacer
+-Adding custom .exe files to the path, or starting them in the commandline from where they are available (elevate.exe)
+-Convert Googlretranslate into a library. 
+-create a separate application integrations file. 
+-Figure out how to simulate multi tasking!

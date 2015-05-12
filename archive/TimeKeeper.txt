@@ -1,0 +1,27 @@
+   if (A_Hour = 23 and A_Min = 57) {
+
+      HalfHeight:= round(A_ScreenHeight / 2)
+      HalfWidth := round(A_ScreenWidth  / 2)
+      TextSize  := round(A_ScreenHeight / 8)
+      TextSize2 := round(A_ScreenHeight / 10)
+
+      Gui, 2: Default
+      ;Gui, Margin, 0, 0
+      Gui, Color, 334047 ;RGB
+      Gui, Font, s%TextSize%, Garamond
+      Gui, +LastFound +AlwaysOnTop +ToolWindow -Caption
+      Gui, Add, Text,, Midnight
+      Gui, Add, Text,, is
+      Gui, Add, Text,, Approaching.
+      Gui, Show, x0 y0 w%HalfWidth% h%A_ScreenHeight%, Midnight1
+      
+      Sleep, 120000
+
+      Gui, 3: Default
+      Gui, Color, ADD8C7 ;RGB
+      Gui, Font, s%TextSize2%, Garamond
+      Gui, +LastFound +AlwaysOnTop +ToolWindow -Caption
+      Gui, Add, Text,, Midnight is
+      Gui, Add, Text,, almost here.
+      Gui, Show, x%HalfWidth% y%HalfHeight% w%HalfWidth% h%HalfHeight%, Midnight2
+      }

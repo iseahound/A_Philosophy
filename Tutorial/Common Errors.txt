@@ -1,0 +1,10 @@
+Forgetting to Evaluate a Variable
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+   Remember to put %% around a variable in a command
+   
+   Examples:
+      WinSet, Transparent, %TransValue%, ahk_id %MouseWin%
+  
+         and NOT
+
+      WinSet, Transparent, TransValue, ahk_id %MouseWin%

@@ -1,0 +1,9 @@
+#+Q:: 
+   If (DelayShutdown < 2) {
+      Run SleepSoon.bat
+      ;Run cmd /K "shutdown /a && shutdown /s /t 120 && exit"
+      DelayShutdown++
+   }
+   else
+      shutdown, 13
+   return
